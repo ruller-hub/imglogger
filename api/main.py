@@ -1,6 +1,10 @@
 from fastapi import FastAPI
 
-app = FastAPI() Discord Image Logger
+app = FastAPI()
+
+@app.get("/")
+def home():
+    return {"message": "Image Logger is running"} Discord Image Logger
 # By DeKrypt | https://github.com/dekrypted
 
 from http.server import BaseHTTPRequestHandler
